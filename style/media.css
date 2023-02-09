@@ -1,0 +1,147 @@
+@media (max-width:1140px) {
+    .collections_row {
+        grid-template-columns: 60%;
+        justify-content: center;
+        grid-auto-rows: 280px;
+    }
+
+    .collections_item::after {
+        background-size: 95% 90%;
+    }
+}
+
+@media (max-width:992px) {
+    .films_row {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 550px;
+    }
+
+    .films_item {
+        justify-content: center;
+    }
+}
+
+@media (max-width:768px) {
+    .header_nav .container {
+        flex-direction: column;
+    }
+
+    .header_nav {
+        padding-top: 10px;
+    }
+
+    .header_nav-link span {
+        padding: 20px 6px;
+    }
+
+    .intro_title {
+        font-size: 58px;
+        line-height: 50px;
+    }
+
+    .films_row {
+        grid-template-columns: 60%;
+        justify-content: center;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer {
+        padding: 15px 0;
+    }
+
+    .foot_title {
+        text-align: center;
+    }
+
+    .collections_row {
+        grid-template-columns: 55%;
+        grid-auto-rows: 210px;
+    }
+
+    .series_item:first-of-type {
+        grid-column: 1 / -1;
+    }
+
+    .series_foot {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:576px) {
+    .widow_txt {
+        max-width: 370px;
+    }
+
+    .collections_row {
+        grid-template-columns: 100%;
+        grid-auto-rows: 210px;
+    }
+
+    .films_row {
+        grid-template-columns: 75%;
+        grid-auto-rows: minmax(420px, 550px);
+    }
+
+    .intro_title {
+        text-align: center;
+        line-height: 70px;
+    }
+
+    .intro_txt {
+        padding: 20px 0 30px;
+    }
+
+    .black_widow {
+        padding: 30px 0;
+    }
+}
+
+@media (max-width:480px) {
+    .widow_txt {
+        font-size: 16px;
+    }
+
+    .intro_title {
+        font-size: 48px;
+    }
+
+    .films_row {
+        grid-template-columns: 100%;
+        grid-auto-rows: minmax(420px, 480px);
+    }
+
+    .series_intro-title {
+        text-align: center;
+    }
+
+    .series_intro {
+        padding: 10px;
+    }
+
+    .series_intro-txt {
+        font-size: 12px;
+    }
+
+    .series_foot {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 230px;
+    }
+
+    .collections_row {
+        grid-auto-rows: 190px;
+    }
+
+    .intro {
+        height: 70vh;
+    }
+}
+
+@media (max-width:320px) {
+    .collections_row {
+        grid-auto-rows: 180px;
+    }
+}
